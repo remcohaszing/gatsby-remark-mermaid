@@ -1,0 +1,6 @@
+### JETBRAINS
+.idea/
+*.iml
+
+### NODEJS
+node_modules/
