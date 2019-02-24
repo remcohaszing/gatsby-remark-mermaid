@@ -37,7 +37,7 @@ Now you can use markdown:
 
 To generate: 
 
-![example](https://github.com/ChappIO/gatsby-remark-mermaid/raw/master/example_graph.svg?sanitize=true)
+![example](https://github.com/ChappIO/gatsby-remark-mermaid/raw/master/example_graph.png)
 
 ## Options
 
