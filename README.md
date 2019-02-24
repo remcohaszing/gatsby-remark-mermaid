@@ -18,16 +18,18 @@ make sure you **import this before those plugins**.
 
 Add the plugin to your `gatsby-config.js`.
 ```js
-plugins: [
-  {
-    resolve: 'gatsby-transformer-remark',
-    options: {
-      plugins: [
-        'gatsby-remark-mermaid'
-      ]
+{
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-mermaid'
+        ]
+      }
     }
-  }
-]
+  ]
+}
 ```
 
 Now you can use markdown:
@@ -49,3 +51,26 @@ To generate:
 | ---        | ---         | ---                                                                                                                                                                           |
 | `language` | `"mermaid"` | Set this value to the identifier which will replace the code block. If you set it to `"graph"` then you can create graphs using ` ```graph ...`.                              |
 | `theme`    | `"default"` | Set this value to one of `"dark"`, `"neutral"`, `"forrest"`, or `"default"`. You can preview the themes in the [Live Editor](https://mermaidjs.github.io/mermaid-live-editor) |
+
+### Defaults
+
+```js
+{
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+             resolve: 'gatsby-remark-mermaid',
+             options: {
+                 language: 'mermaid',
+                 theme: 'default'
+             } 
+          }
+        ]
+      }
+    }
+  ] 
+}
+```
