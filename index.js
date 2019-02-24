@@ -6,6 +6,9 @@ async function render(browser, definition, theme) {
     const page = await browser.newPage();
     page.setViewport({width: 200, height: 200});
     await page.goto(`file://${path.join(__dirname, 'render.html')}`);
+    await page.addScriptTag({
+        path:  require.resolve('mermaid/dist/mermaid.min.js')
+    });
     return await page.$eval('#container', (container, definition, theme) => {
         container.innerHTML = `<div class="mermaid">${definition}</div>`;
 
