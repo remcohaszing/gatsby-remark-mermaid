@@ -3,6 +3,9 @@
 
 Create [mermaid](https://mermaidjs.github.io/) graphs and diagrams in your markdown files.
 
+This plugin uses **server-side rendering**. This means the svg is rendered on build time instead of having a runtime
+dependency on mermaid.
+
 ## Install
 
 `npm install --save gatsby-remark-mermaid gatsby-transformer-remark`
