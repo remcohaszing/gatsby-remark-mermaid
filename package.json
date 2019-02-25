@@ -1,7 +1,7 @@
 {
   "name": "gatsby-remark-mermaid",
   "version": "1.0.0",
-  "description": "",
+  "description": "Add pretty graphs using mermaid and server-side rendering.",
   "main": "index.js",
   "repository": {
     "type": "git",
