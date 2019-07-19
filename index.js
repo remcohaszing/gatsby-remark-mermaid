@@ -2,9 +2,9 @@ const path = require('path');
 const visit = require('unist-util-visit');
 const puppeteer = require('puppeteer');
 
-async function render(browser, definition, theme) {
+async function render(browser, definition, theme, viewport) {
     const page = await browser.newPage();
-    page.setViewport({width: 200, height: 200});
+    page.setViewport(viewport);
     await page.goto(`file://${path.join(__dirname, 'render.html')}`);
     await page.addScriptTag({
         path:  require.resolve('mermaid/dist/mermaid.min.js')
@@ -35,7 +35,8 @@ function mermaidNodes(markdownAST, language) {
 module.exports = async ({markdownAST},
                         {
                             language = 'mermaid',
-                            theme = 'default'
+                            theme = 'default',
+                            viewport = {height: 200, width: 200},
                         }) => {
 
     // Check if there is a match before launching anything
@@ -50,7 +51,7 @@ module.exports = async ({markdownAST},
 
     await Promise.all(nodes.map(async node => {
         node.type = 'html';
-        node.value = await render(browser, node.value, theme);
+        node.value = await render(browser, node.value, theme, viewport);
     }));
     browser.close();
 };
