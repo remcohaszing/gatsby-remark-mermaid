@@ -47,10 +47,12 @@ To generate:
 
 ## Options
 
-| Name       | Default     | Description                                                                                                                                                                   |
-| ---        | ---         | ---                                                                                                                                                                           |
-| `language` | `"mermaid"` | Set this value to the identifier which will replace the code block. If you set it to `"graph"` then you can create graphs using ` ```graph ...`.                              |
-| `theme`    | `"default"` | Set this value to one of `"dark"`, `"neutral"`, `"forrest"`, or `"default"`. You can preview the themes in the [Live Editor](https://mermaidjs.github.io/mermaid-live-editor) |
+| Name              | Default     | Description                                                                                                                                                                   |
+| ---               | ---         | ---                                                                                                                                                                           |
+| `language`        | `"mermaid"` | Set this value to the identifier which will replace the code block. If you set it to `"graph"` then you can create graphs using ` ```graph ...`.                              |
+| `theme`           | `"default"` | Set this value to one of `"dark"`, `"neutral"`, `"forrest"`, or `"default"`. You can preview the themes in the [Live Editor](https://mermaidjs.github.io/mermaid-live-editor) |
+| `viewport.width`  | `200`       | Set this value to the desired viewport width while rendering the svg                                                                                                          |
+| `viewport.height` | `200`       | Set this value to the desired viewport height while rendering the svg                                                                                                         |
 
 ### Defaults
 
@@ -65,7 +67,11 @@ To generate:
              resolve: 'gatsby-remark-mermaid',
              options: {
                  language: 'mermaid',
-                 theme: 'default'
+                 theme: 'default',
+                 viewport: {
+                     width: 200,
+                     height: 200
+                 }
              } 
           }
         ]
