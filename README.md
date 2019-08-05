@@ -36,12 +36,12 @@ Now you can use markdown:
 
     ```mermaid
     graph LR
-    install[Install Plugin] 
+    install[Install Plugin]
     install --> configure[Configure Plugin]
     configure --> draw[Draw Fancy Diagrams]
     ```
 
-To generate: 
+To generate:
 
 ![example](https://github.com/ChappIO/gatsby-remark-mermaid/raw/master/example_graph.png)
 
@@ -53,6 +53,7 @@ To generate:
 | `theme`           | `"default"` | Set this value to one of `"dark"`, `"neutral"`, `"forrest"`, or `"default"`. You can preview the themes in the [Live Editor](https://mermaidjs.github.io/mermaid-live-editor) |
 | `viewport.width`  | `200`       | Set this value to the desired viewport width while rendering the svg                                                                                                          |
 | `viewport.height` | `200`       | Set this value to the desired viewport height while rendering the svg                                                                                                         |
+| `mermaidOptions`  | `{}`        | This object specifies the [configuration options](https://mermaidjs.github.io/#/mermaidAPI) passed to `mermaid.initialize()`                                                                                              |
 
 ### Defaults
 
@@ -71,12 +72,15 @@ To generate:
                  viewport: {
                      width: 200,
                      height: 200
+                 },
+                 mermaidOptions: {
+                     themeCSS: ".node rect { fill: cornflowerblue; }"
                  }
-             } 
+             }
           }
         ]
       }
     }
-  ] 
+  ]
 }
 ```
