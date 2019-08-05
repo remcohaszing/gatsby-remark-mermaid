@@ -53,7 +53,7 @@ To generate:
 | `theme`           | `"default"` | Set this value to one of `"dark"`, `"neutral"`, `"forrest"`, or `"default"`. You can preview the themes in the [Live Editor](https://mermaidjs.github.io/mermaid-live-editor) |
 | `viewport.width`  | `200`       | Set this value to the desired viewport width while rendering the svg                                                                                                          |
 | `viewport.height` | `200`       | Set this value to the desired viewport height while rendering the svg                                                                                                         |
-| `mermaidOptions`  | `{}`        | This object specifies the configuration options passed to `mermaid.initialize()`                                                                                              |
+| `mermaidOptions`  | `{}`        | This object specifies the [configuration options](https://mermaidjs.github.io/#/mermaidAPI) passed to `mermaid.initialize()`                                                                                              |
 
 ### Defaults
 
