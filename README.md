@@ -47,13 +47,14 @@ To generate:
 
 ## Options
 
-| Name              | Default     | Description                                                                                                                                                                   |
-| ---               | ---         | ---                                                                                                                                                                           |
-| `language`        | `"mermaid"` | Set this value to the identifier which will replace the code block. If you set it to `"graph"` then you can create graphs using ` ```graph ...`.                              |
-| `theme`           | `"default"` | Set this value to one of `"dark"`, `"neutral"`, `"forrest"`, or `"default"`. You can preview the themes in the [Live Editor](https://mermaidjs.github.io/mermaid-live-editor) |
-| `viewport.width`  | `200`       | Set this value to the desired viewport width while rendering the svg                                                                                                          |
-| `viewport.height` | `200`       | Set this value to the desired viewport height while rendering the svg                                                                                                         |
-| `mermaidOptions`  | `{}`        | This object specifies the [configuration options](https://mermaidjs.github.io/#/mermaidAPI) passed to `mermaid.initialize()`                                                                                              |
+| Name               | Default                                               | Description                                                                                                                                                                   |
+| ---                | ---                                                   | ---                                                                                                                                                                           |
+| `language`         | `"mermaid"`                                           | Set this value to the identifier which will replace the code block. If you set it to `"graph"` then you can create graphs using ` ```graph ...`.                              |
+| `theme`            | `"default"`                                           | Set this value to one of `"dark"`, `"neutral"`, `"forrest"`, or `"default"`. You can preview the themes in the [Live Editor](https://mermaidjs.github.io/mermaid-live-editor) |
+| `viewport.width`   | `200`                                                 | Set this value to the desired viewport width while rendering the svg                                                                                                          |
+| `viewport.height`  | `200`                                                 | Set this value to the desired viewport height while rendering the svg                                                                                                         |
+| `mermaidOptions`   | `{}`                                                  | This object specifies the [configuration options](https://mermaidjs.github.io/#/mermaidAPI) passed to `mermaid.initialize()`                                                  |
+| `puppeteerOptions` | `{args:['--no-sandbox', '--disable-setuid-sandbox']}` | Set this to override the default options passed to [`puppeteer.launch`](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions).            |
 
 ### Defaults
 
