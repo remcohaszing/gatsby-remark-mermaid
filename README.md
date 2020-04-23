@@ -8,7 +8,7 @@ dependency on mermaid.
 
 ## Install
 
-`npm install --save gatsby-remark-mermaid gatsby-transformer-remark`
+`npm install --save gatsby-remark-mermaid gatsby-transformer-remark puppeteer`
 
 
 ## How to Use
