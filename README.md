@@ -1,6 +1,8 @@
 # gatsby-remark-mermaid
 ![npm](https://img.shields.io/npm/v/gatsby-remark-mermaid.svg?style=flat-square)
 
+**Since I no longer use Gatsby, I have no interest in maintaining this library. If you'd like to take over please let me know and I will redirect this repository to your account.**
+
 Create [mermaid](https://mermaidjs.github.io/) graphs and diagrams in your markdown files.
 
 This plugin uses **server-side rendering**. This means the svg is rendered on build time instead of having a runtime
