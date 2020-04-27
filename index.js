@@ -40,7 +40,8 @@ module.exports = async ({markdownAST},
                             language = 'mermaid',
                             theme = 'default',
                             viewport = {height: 200, width: 200},
-                            mermaidOptions = {}
+                            mermaidOptions = {},
+                            puppeteerOptions = {args:['--no-sandbox', '--disable-setuid-sandbox']}
                         }) => {
 
     // Check if there is a match before launching anything
@@ -51,7 +52,7 @@ module.exports = async ({markdownAST},
     }
 
     // Launch virtual browser
-    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
+    const browser = await puppeteer.launch(puppeteerOptions);
 
     await Promise.all(nodes.map(async node => {
         node.type = 'html';
