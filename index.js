@@ -51,11 +51,17 @@ module.exports = async ({markdownAST},
     }
 
     // Launch virtual browser
-    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
+    let browser;
+    try {
+        browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
 
-    await Promise.all(nodes.map(async node => {
-        node.type = 'html';
-        node.value = await render(browser, node.value, theme, viewport, mermaidOptions);
-    }));
-    browser.close();
+        await Promise.all(nodes.map(async node => {
+            node.type = 'html';
+            node.value = await render(browser, node.value, theme, viewport, mermaidOptions);
+        }));
+    } finally {
+        if (browser) {
+            await browser.close();
+        }
+    }
 };
