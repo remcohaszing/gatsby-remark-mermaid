@@ -1,7 +1,5 @@
 # gatsby-remark-mermaid
-![npm](https://img.shields.io/npm/v/gatsby-remark-mermaid.svg?style=flat-square)
-
-**Since I no longer use Gatsby, I have no interest in maintaining this library. If you'd like to take over please let me know and I will redirect this repository to your account.**
+[![npm](https://img.shields.io/npm/v/gatsby-remark-mermaid.svg?style=flat-square)](https://www.npmjs.com/package/gatsby-remark-mermaid)
 
 Create [mermaid](https://mermaidjs.github.io/) graphs and diagrams in your markdown files.
 
