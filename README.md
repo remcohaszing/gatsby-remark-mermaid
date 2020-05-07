@@ -84,3 +84,7 @@ To generate:
   ]
 }
 ```
+
+### Credits
+
+This package was originally developed by [Thomas Biesaart](https://github.com/ChappIO).
