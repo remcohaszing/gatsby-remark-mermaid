@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChappIO/gatsby-remark-mermaid.git"
+    "url": "git+https://github.com/remcohaszing/gatsby-remark-mermaid.git"
   },
   "keywords": [
     "gatsby",
@@ -21,9 +21,9 @@
   "author": "Thomas Biesaart <thomas.biesaart@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChappIO/gatsby-remark-mermaid/issues"
+    "url": "https://github.com/remcohaszing/gatsby-remark-mermaid/issues"
   },
-  "homepage": "https://github.com/ChappIO/gatsby-remark-mermaid#readme",
+  "homepage": "https://github.com/remcohaszing/gatsby-remark-mermaid#readme",
   "dependencies": {
     "mermaid": "^8.0.0",
     "unist-util-visit": "^1.4.0"

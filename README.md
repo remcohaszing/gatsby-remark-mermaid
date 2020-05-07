@@ -43,7 +43,7 @@ Now you can use markdown:
 
 To generate:
 
-![example](https://github.com/ChappIO/gatsby-remark-mermaid/raw/master/example_graph.png)
+![example](https://github.com/remcohaszing/gatsby-remark-mermaid/raw/master/example_graph.png)
 
 ## Options
 
