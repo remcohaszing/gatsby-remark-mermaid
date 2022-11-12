@@ -9,7 +9,8 @@ dependency on mermaid.
 ## Install
 
 ```bash
-npm install gatsby-remark-mermaid gatsby-transformer-remark && npm install --save-dev puppeteer puppeteer-core
+npm install gatsby-remark-mermaid gatsby-transformer-remark &&
+npm install --save-dev puppeteer puppeteer-core
 ```
 
 
