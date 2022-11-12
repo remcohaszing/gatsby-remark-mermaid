@@ -8,7 +8,9 @@ dependency on mermaid.
 
 ## Install
 
-`npm install --save gatsby-remark-mermaid gatsby-transformer-remark puppeteer`
+```bash
+npm install gatsby-remark-mermaid gatsby-transformer-remark && npm install --save-dev puppeteer puppeteer-core
+```
 
 
 ## How to Use
@@ -36,9 +38,9 @@ Now you can use markdown:
 
     ```mermaid
     graph LR
-    install[Install Plugin]
-    install --> configure[Configure Plugin]
-    configure --> draw[Draw Fancy Diagrams]
+      install[Install Plugin]
+      install --> configure[Configure Plugin]
+      configure --> draw[Draw Fancy Diagrams]
     ```
 
 To generate:

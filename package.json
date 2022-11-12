@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-mermaid",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Add pretty graphs using mermaid and server-side rendering.",
   "main": "index.js",
   "repository": {
@@ -25,10 +25,11 @@
   },
   "homepage": "https://github.com/remcohaszing/gatsby-remark-mermaid#readme",
   "dependencies": {
-    "mermaid": "^8.7.0",
-    "unist-util-visit": "^1.4.0"
+    "mermaid": "^9.2.2",
+    "unist-util-visit": "2.0.3"
   },
   "peerDependencies": {
-    "puppeteer": "*"
+    "puppeteer": "*",
+    "puppeteer-core": "*"
   }
 }
