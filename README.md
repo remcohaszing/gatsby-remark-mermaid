@@ -9,13 +9,12 @@ dependencies on `mermaid.js`.
 ## Install
 
 ```bash
-npm install gatsby-remark-mermaid gatsby-transformer-remark &&
-npm install --save-dev puppeteer
+npm install gatsby-remark-mermaid gatsby-transformer-remark
 ```
 
 ## How to use
 
-Configure this plugin as a plugin of [gatsby-transformer-remark](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/). 
+Configure this plugin as a plugin of [gatsby-transformer-remark](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/).
 
 **NOTE:** Make sure you add this plugin **before** any other plugins that process code blocks.
 
@@ -54,7 +53,7 @@ plugins: [
 
 ## Configuration Options
 
-The configuration options for this plugin are the same as for `remark-mermaidjs` [provided here](https://github.com/remcohaszing/remark-mermaidjs#options). 
+The configuration options for this plugin are the same as for `remark-mermaidjs` [provided here](https://github.com/remcohaszing/remark-mermaidjs#options).
 However, the table below describes the configuration details as they apply to Gatsby.
 
 | Name                            | Default              | Description                                                                                                                                                                                                                                                               |
@@ -70,7 +69,7 @@ However, the table below describes the configuration details as they apply to Ga
 
 ## How it works
 
-This plugin processes markdown code blocks set with `mermaid` as the language. It relies 
+This plugin processes markdown code blocks set with `mermaid` as the language. It relies
 
 For example, this mermaid code block:
 
