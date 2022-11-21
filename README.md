@@ -35,21 +35,21 @@ module.exports = {
             resolve: `gatsby-remark-mermaid`,
             options: {
               launchOptions: {
-                executablePath: 'path/to/chrome/executable',
+                executablePath: 'path/to/chrome/executable'
               },
               svgo: {
-                plugins: [{ name: 'removeTitle', active: false }],
+                plugins: [{ name: 'removeTitle', active: false }]
               },
               mermaidOptions: {
                 theme: 'neutral',
-                themeCSS: '.node rect { fill: #fff; }',
-              },
-            },
-          },
-        ],
-      },
-    },
-  ],
+                themeCSS: '.node rect { fill: #fff; }'
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
