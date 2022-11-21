@@ -2,11 +2,16 @@
   "name": "gatsby-remark-mermaid",
   "version": "2.1.0",
   "description": "Add pretty graphs using mermaid and server-side rendering.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/remcohaszing/gatsby-remark-mermaid.git"
-  },
+  "author": "Thomas Biesaart <thomas.biesaart@gmail.com>",
+  "license": "ISC",
+  "exports": "./index.js",
+  "repository": "remcohaszing/gatsby-remark-mermaid",
+  "funding": "https://github.com/sponsors/remcohaszing",
+  "bugs": "https://github.com/remcohaszing/gatsby-remark-mermaid/issues",
+  "homepage": "https://github.com/remcohaszing/gatsby-remark-mermaid#readme",
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -18,12 +23,6 @@
     "flowchart",
     "diagram"
   ],
-  "author": "Thomas Biesaart <thomas.biesaart@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/remcohaszing/gatsby-remark-mermaid/issues"
-  },
-  "homepage": "https://github.com/remcohaszing/gatsby-remark-mermaid#readme",
   "dependencies": {
     "remark-mermaidjs": "^4.0.0"
   },
