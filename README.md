@@ -83,7 +83,7 @@ For example, this mermaid code block:
 
 Generates the following SVG image:
 
-![example](https://github.com/remcohaszing/gatsby-remark-mermaid/raw/master/example_graph.png)
+![example](https://github.com/remcohaszing/gatsby-remark-mermaid/raw/HEAD/example_graph.png)
 
 ### Credits
 
