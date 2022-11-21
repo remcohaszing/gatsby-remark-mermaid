@@ -26,5 +26,8 @@
   "homepage": "https://github.com/remcohaszing/gatsby-remark-mermaid#readme",
   "dependencies": {
     "remark-mermaidjs": "^4.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.0"
   }
 }
