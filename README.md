@@ -1,18 +1,18 @@
 # gatsby-remark-mermaid
 [![npm](https://img.shields.io/npm/v/gatsby-remark-mermaid.svg?style=flat-square)](https://www.npmjs.com/package/gatsby-remark-mermaid)
 
-Creates [mermaid](https://mermaidjs.github.io/) graphs and diagrams in your markdown files.
+Create [mermaid](https://mermaidjs.github.io/) graphs and diagrams in your markdown files.
 
-This plugin uses [remark-mermaidjs](https://github.com/remcohaszing/remark-mermaidjs) to generate SVG diagrams at build-time. The mermaid code blocks are replaced with an inline SVGs in the generated HTML. This prevents any runtime
+This plugin uses [remark-mermaidjs](https://github.com/remcohaszing/remark-mermaidjs) to generate SVG diagrams at build time. The mermaid code blocks are replaced with an inline SVG in the generated HTML. This prevents any runtime
 dependencies on `mermaid.js`.
 
 ## Install
 
-```bash
+```sh
 npm install gatsby-remark-mermaid gatsby-transformer-remark
 ```
 
-## How to use
+## Usage
 
 Configure this plugin as a plugin of [gatsby-transformer-remark](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/).
 
@@ -51,19 +51,19 @@ plugins: [
 ],
 ```
 
-## Configuration Options
+## Options
 
 The configuration options for this plugin are the same as for `remark-mermaidjs` [provided here](https://github.com/remcohaszing/remark-mermaidjs#options).
 However, the table below describes the configuration details as they apply to Gatsby.
 
 | Name                            | Default              | Description                                                                                                                                                                                                                                                               |
 | :------------------------------ | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `launchOptions.executablePath`  | `""`                 | (Required) String path to the chrome executable that puppeteer uses to render the mermaid diagrams to SVGs.                                                                                                                                                               |
+| `launchOptions.executablePath`  |                      | (Required) String path to the chrome executable that puppeteer uses to render the mermaid diagrams to SVGs.                                                                                                                                                               |
 | `mermaidOptions`                | `{}`                 | (Optional) Configuration object for customizing themes, styles, and properties of all mermaid diagrams. See [mermaidAPI configuration options](https://mermaid-js.github.io/mermaid/#/Setup).                                                                             |
 | `mermaidOptions.theme`          | `"default"`          | (Optional) Name of mermaid theme. Valid options: `'default'`, `'forest'`, `'dark'`, `'neutral'`, `'null'`. See [mermaid themes](https://mermaid-js.github.io/mermaid/#/Setup?id=theme).                                                                                   |
 | `mermaidOptions.themeCSS`       | `""`                 | (Optional) Override mermaid styles using `themeCSS`. See [mermaid themes](https://mermaid-js.github.io/mermaid/#/Setup?id=theme).                                                                                                                                         |
 | `mermaidOptions.themeVariables` | `{}`                 | (Optional) Override mermaid variables using `themeVariables`. See [Customizing Themes with themeVariables](https://mermaid-js.github.io/mermaid/#/./theming?id=customizing-themes-with-themevariablesSpecifies).)                                                         |
-| `svgo.plugins`                  | `defaultSVGOOptions` | (Optional) Override default optimizations for the generated SVG files. Set to `null` to disable minifying using SVGO completely. See [defaultSVGOOptions](https://github.com/remcohaszing/remark-mermaidjs/blob/529e44babf07b593489efbe7c238a39089066faa/index.ts#L18)).) |
+| `svgo.plugins`                  | `defaultSVGOOptions` | (Optional) Override default optimizations for the generated SVG files. Set to `null` to disable minifying using SVGO completely. See [defaultSVGOOptions](https://github.com/remcohaszing/remark-mermaidjs/blob/v4.0.0/index.ts#L18)).) |
 
 **NOTE:** You can use the [Mermaid Live Editor](https://mermaidjs.github.io/mermaid-live-editor) to preview the theme options described below.
 
