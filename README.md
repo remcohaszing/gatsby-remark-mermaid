@@ -22,33 +22,34 @@ Example configuration
 
 ```js
 // In your gatsby-config.js
-
-plugins: [
-  {
-    resolve: 'gatsby-transformer-remark',
-    options: {
-      plugins: [
-        {
-          resolve: `gatsby-remark-mermaid`,
-          options: {
-            launchOptions: {
-              executablePath: 'path/to/chrome/executable',
-            },
-            svgo: {
-              plugins: [
-                { name: 'removeTitle', active: false },
-              ],
-            },
-            mermaidOptions: {
-              theme: 'neutral',
-              themeCSS: '.node rect { fill: #fff; }',
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-mermaid`,
+            options: {
+              launchOptions: {
+                executablePath: 'path/to/chrome/executable',
+              },
+              svgo: {
+                plugins: [
+                  { name: 'removeTitle', active: false },
+                ],
+              },
+              mermaidOptions: {
+                theme: 'neutral',
+                themeCSS: '.node rect { fill: #fff; }',
+              },
             },
           },
-        },
-      ]
+        ]
+      }
     }
-  }
-],
+  ],
+}
 ```
 
 ## Options
