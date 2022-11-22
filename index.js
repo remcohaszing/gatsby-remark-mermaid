@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = async ({ markdownAST, markdownNode }, options) => {
   const { VFile } = await import('vfile')
   const { default: plugin } = await import('remark-mermaidjs')
