@@ -27,7 +27,8 @@
     "diagram"
   ],
   "dependencies": {
-    "remark-mermaidjs": "^4.0.0"
+    "remark-mermaidjs": "^4.0.0",
+    "vfile": "^5.0.0"
   },
   "devDependencies": {
     "prettier": "^2.0.0"
