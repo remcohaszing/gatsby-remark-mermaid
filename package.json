@@ -4,7 +4,10 @@
   "description": "Add pretty graphs using mermaid and server-side rendering.",
   "author": "Thomas Biesaart <thomas.biesaart@gmail.com>",
   "license": "ISC",
-  "exports": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
   "repository": "remcohaszing/gatsby-remark-mermaid",
   "funding": "https://github.com/sponsors/remcohaszing",
   "bugs": "https://github.com/remcohaszing/gatsby-remark-mermaid/issues",
