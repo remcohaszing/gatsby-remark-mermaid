@@ -4,11 +4,25 @@
 [![npm](https://img.shields.io/npm/v/gatsby-remark-mermaid.svg)](https://www.npmjs.com/package/gatsby-remark-mermaid)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
-Create [mermaid](https://mermaidjs.github.io/) graphs and diagrams in your markdown files.
+Create [mermaid](https://mermaidjs.github.io) graphs and diagrams in your markdown files.
 
 This plugin uses [remark-mermaidjs](https://github.com/remcohaszing/remark-mermaidjs) to generate
 SVG diagrams at build time. The mermaid code blocks are replaced with an inline SVG in the generated
-HTML. This prevents any runtime dependencies on `mermaid.js`.
+HTML. This prevents any runtime dependencies on `mermaid`.
+
+## Table of COntents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Options](#options)
+  - [`browser`](#browser)
+  - [`css`](#css)
+  - [`errorFallback`](#errorfallback)
+  - [`launchOptions`](#launchoptions)
+  - [`mermaidConfig`](#mermaidconfig)
+  - [`prefix`](#prefix)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 
@@ -19,7 +33,7 @@ npm install gatsby-remark-mermaid gatsby-transformer-remark
 ## Usage
 
 Configure this plugin as a plugin of
-[gatsby-transformer-remark](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/).
+[`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/).
 
 **NOTE:** Make sure you add this plugin **before** any other plugins that process code blocks.
 
@@ -73,32 +87,13 @@ block is removed. The function receives the following arguments:
 
 The options used to launch the browser. (`object`)
 
-### `mermaidOptions`
+### `mermaidConfig`
 
-The [mermaid options](https://mermaid-js.github.io/mermaid/#/Setup) to use.
+The [mermaid config](https://mermaid.js.org/config/setup/modules/config.html) to use.
 
 ### `prefix`
 
 A custom prefix to use for Mermaid IDs. (`string`, default: `mermaid`)
-
-## How it works
-
-This plugin processes markdown code blocks set with `mermaid` as the language. It relies
-
-For example, this mermaid code block:
-
-````markdown
-```mermaid
-graph LR
-  install[Install Plugin]
-  install --> configure[Configure Plugin]
-  configure --> draw[Draw Fancy Diagrams]
-```
-````
-
-Generates the following SVG image:
-
-![example](https://github.com/remcohaszing/gatsby-remark-mermaid/raw/HEAD/example_graph.png)
 
 ## Credits
 
