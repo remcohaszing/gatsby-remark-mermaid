@@ -49,12 +49,12 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-mermaid`,
-            options: {
+            options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
               mermaidConfig: {
                 theme: 'neutral',
                 themeCSS: '.node rect { fill: #fff; }'
               }
-            }
+            })
           }
         ]
       }

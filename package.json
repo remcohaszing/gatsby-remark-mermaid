@@ -13,6 +13,7 @@
   "bugs": "https://github.com/remcohaszing/gatsby-remark-mermaid/issues",
   "homepage": "https://github.com/remcohaszing/gatsby-remark-mermaid#readme",
   "files": [
+    "index.d.ts",
     "index.js"
   ],
   "keywords": [
