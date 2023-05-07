@@ -36,13 +36,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-mermaid`,
             options: {
-              launchOptions: {
-                executablePath: 'path/to/chrome/executable'
-              },
-              svgo: {
-                plugins: [{ name: 'removeTitle', active: false }]
-              },
-              mermaidOptions: {
+              mermaidConfig: {
                 theme: 'neutral',
                 themeCSS: '.node rect { fill: #fff; }'
               }
@@ -57,21 +51,35 @@ module.exports = {
 
 ## Options
 
-The configuration options for this plugin are the same as for
-[`remark-mermaidjs`](https://github.com/remcohaszing/remark-mermaidjs#options).
+### `browser`
 
-- `launchOptions.executablePath`: String path to the chrome executable that puppeteer uses to render
-  the mermaid diagrams to SVGs. (Required)
-- `mermaidOptions`: Configuration object for customizing themes, styles, and properties of all
-  mermaid diagrams. See
-  [mermaidAPI configuration options](https://mermaid-js.github.io/mermaid/#/Setup). (Optional)
-- `svgo`: Override default optimizations for the generated SVG files. Set to `false` to disable
-  minifying using SVGO completely. See
-  [defaultSVGOOptions](https://github.com/remcohaszing/remark-mermaidjs/blob/v4.0.0/index.ts#L18)).)
-  (Optional)
+The Playwright browser to use. (`object`, default: chromium)
 
-**NOTE:** You can use the [Mermaid Live Editor](https://mermaidjs.github.io/mermaid-live-editor) to
-preview the theme options described below.
+### `css`
+
+A URL that points to a custom CSS file to load. Use this to load custom fonts. This option is
+ignored in the browser. You need to include the CSS in your build manually. (`string` | `URL`)
+
+### `errorFallback`
+
+Create a fallback node if processing of a mermaid diagram fails. If nothing is returned, the code
+block is removed. The function receives the following arguments:
+
+- `node`: The mdast `code` node that couldn’t be rendered.
+- `error`: The error message that was thrown.
+- `file`: The file on which the error occurred.
+
+### `launchOptions`
+
+The options used to launch the browser. (`object`)
+
+### `mermaidOptions`
+
+The [mermaid options](https://mermaid-js.github.io/mermaid/#/Setup) to use.
+
+### `prefix`
+
+A custom prefix to use for Mermaid IDs. (`string`, default: `mermaid`)
 
 ## How it works
 
