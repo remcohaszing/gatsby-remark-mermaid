@@ -1,7 +1,8 @@
 # gatsby-remark-mermaid
 
 [![github actions](https://github.com/remcohaszing/gatsby-remark-mermaid/actions/workflows/ci.yaml/badge.svg)](https://github.com/remcohaszing/gatsby-remark-mermaid/actions/workflows/ci.yaml)
-[![npm](https://img.shields.io/npm/v/gatsby-remark-mermaid.svg)](https://www.npmjs.com/package/gatsby-remark-mermaid)
+[![npm version](https://img.shields.io/npm/v/gatsby-remark-mermaid.svg)](https://www.npmjs.com/package/gatsby-remark-mermaid)
+[![npm downloads](https://img.shields.io/npm/dw/gatsby-remark-mermaid)](https://www.npmjs.com/package/gatsby-remark-mermaid)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
 Create [mermaid](https://mermaidjs.github.io) graphs and diagrams in your markdown files.
