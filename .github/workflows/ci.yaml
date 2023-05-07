@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - run: npm ci
       - run: npm pack
       - uses: actions/upload-artifact@v3
@@ -26,7 +26,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with: { node-version: latest }
+        with:
+          node-version: 20
       - run: npm ci
       - run: npx prettier --check .
 
@@ -35,7 +36,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with: { node-version: latest }
+        with:
+          node-version: 20
       - run: npm ci
       - run: npx remark --frail .
 
@@ -51,7 +53,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           registry-url: https://registry.npmjs.org
       - uses: actions/download-artifact@v3
         with: { name: package }
