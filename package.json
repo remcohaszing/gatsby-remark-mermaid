@@ -28,8 +28,11 @@
     "diagram"
   ],
   "dependencies": {
-    "remark-mermaidjs": "^5.0.0",
-    "vfile": "^5.0.0"
+    "remark-mermaidjs": "^7.0.0",
+    "vfile": "^6.0.0"
+  },
+  "peerDependencies": {
+    "playwright": "1"
   },
   "devDependencies": {
     "prettier": "^3.0.0",
