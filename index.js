@@ -9,5 +9,5 @@ module.exports = async ({ markdownAST, markdownNode }, options) => {
     path: markdownNode.fileAbsolutePath
   })
   const transformer = plugin(options)
-  return transformer(markdownAST, vfile)
+  await transformer(markdownAST, vfile)
 }
