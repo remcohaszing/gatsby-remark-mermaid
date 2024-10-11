@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = async ({ markdownAST, markdownNode }, options) => {
+async function gatsbyRemarkMermaid({ markdownAST, markdownNode }, options) {
   const { VFile } = await import('vfile')
   const { default: plugin } = await import('remark-mermaidjs')
 
@@ -11,3 +11,5 @@ module.exports = async ({ markdownAST, markdownNode }, options) => {
   const transformer = plugin(options)
   await transformer(markdownAST, vfile)
 }
+
+module.exports = gatsbyRemarkMermaid
