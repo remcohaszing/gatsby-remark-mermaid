@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-mermaid",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Add pretty graphs using mermaid and server-side rendering.",
   "author": "Thomas Biesaart <thomas.biesaart@gmail.com>",
   "license": "ISC",
